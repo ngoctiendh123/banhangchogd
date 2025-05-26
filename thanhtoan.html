@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Thanh toán - Tạp Hóa Tươi Sạch</title>
+  <link rel="stylesheet" href="thanhtoan.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header-container">
+      <h1>Tạp Hóa Tươi Sạch - Thanh Toán</h1>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="cart" aria-label="Giỏ hàng">
+      <h2>Giỏ hàng của bạn</h2>
+      <div id="cart-items" class="cart-items"></div>
+      <p id="cart-total" class="cart-total">Tổng tiền: 0 VND</p>
+      <button id="checkout-btn" class="btn primary" disabled>Thanh toán</button>
+    </section>
+
+    <section id="qr-section" aria-label="Mã QR thanh toán">
+      <h2>Quét mã QR để thanh toán</h2>
+      <div id="qr-code" class="qr-code"></div>
+      <p id="payment-info"></p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Tạp Hóa Tươi Sạch</p>
+  </footer>
+
+ 
+  <script type="module" src="thanhtoan.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Thông tin sản phẩm</title>
+    <link rel="stylesheet" href="quanlibanhang.css" />
+</head>
+<body>
+
+    <!-- Thanh menu -->
+    <nav class="main-menu" aria-label="Thanh điều hướng chính">
+        <ul class="menu-list">
+            <li><a href="index.html" class="menu-link">Trang chủ</a></li>
+            <li><a href="themsanpham.html" class="menu-link active">Thêm Sản phẩm</a></li>
+            <li><a href="doanhthu.html" class="menu-link">Doanh thu</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Thông tin sản phẩm</h1>
+        <input
+          type="text"
+          id="search-food"
+          placeholder="🔍 Tìm sản phẩm..."
+          oninput="searchFood()"
+        />
+        <button class="pay-btn" id="checkout-btn">Thanh toán</button>
+    </header>
+
+    <main class="container">
+        <!-- Cột trái: Danh sách món ăn -->
+        <section class="food-menu">
+            <h2>🍽️ Danh sách sản phẩm</h2>
+            <div id="food-list"></div>
+        </section>
+
+        <!-- Cột phải: Món đã chọn -->
+        <section class="selected-food">
+            <h2>📝 sản phẩm đã chọn</h2>
+            <div id="selected-list"></div>
+            <div id="cart-items"></div>
+        </section>
+    </main>
+
+    <script type="module" src="quanlibanhang.js"></script>
+</body>
+</html>

@@ -1,0 +1,169 @@
+/* Reset cơ bản */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+  line-height: 1.5;
+  padding: 10px;
+}
+
+/* Menu */
+.main-menu {
+  background-color: #007bff;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 8px;
+  padding: 0;
+}
+
+.menu-link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  background-color: #0069d9;
+  padding: 10px;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.menu-link:hover {
+  background-color: #0056b3;
+}
+
+/* Header */
+header {
+  margin-bottom: 16px;
+}
+
+header h1 {
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+/* Search input */
+#search-food {
+  width: 100%;
+  padding: 10px 14px;
+  font-size: 1rem;
+  border: 1.5px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+/* Nút thanh toán */
+button.pay-btn {
+  width: 100%;
+  background-color: #28a745;
+  color: white;
+  padding: 12px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+button.pay-btn:hover {
+  background-color: #218838;
+}
+
+/* Container chính */
+main.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Danh sách món ăn và giỏ hàng */
+.food-menu,
+.selected-food {
+  background: white;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.food-menu h2,
+.selected-food h2 {
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+  color: #007bff;
+}
+
+/* Món ăn */
+.food-item {
+  background-color: #eef5ff;
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+
+.food-info {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.food-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.food-buttons button {
+  flex: 1;
+  padding: 8px;
+  font-size: 0.9rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+}
+
+.food-buttons button:hover {
+  background-color: #0056b3;
+}
+
+/* Giỏ hàng */
+.selected-item {
+  background-color: #fff5f5;
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+}
+
+.selected-item button {
+  background-color: #dc3545;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 8px;
+}
+
+.selected-item button:hover {
+  background-color: #b02a37;
+}
+
+/* Scrollbar ẩn trên mobile */
+::-webkit-scrollbar {
+  display: none;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Thêm Sản Phẩm - Cửa Hàng Tạp Hóa</title>
+    <link rel="stylesheet" href="themsanpham.css" />
+</head>
+
+<body>
+
+    <!-- Thanh menu điều hướng chính -->
+    <nav aria-label="Thanh điều hướng chính" role="navigation">
+        <ul>
+            <li><a href="index.html" aria-current="page">Trang Chủ</a></li>
+            
+            <li><a href="doanhthu.html">Doanh Thu</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Thêm Sản Phẩm Mới</h1>
+    </header>
+
+    <main>
+        <!-- Form thêm sản phẩm -->
+        <section aria-labelledby="form-title" role="form">
+            <h2 id="form-title" class="sr-only">Form thêm sản phẩm</h2>
+            <label for="productName">Tên sản phẩm:</label>
+            <input type="text" id="productName" name="productName" placeholder="Nhập tên sản phẩm" required />
+
+            <label for="productPrice">Giá sản phẩm (VNĐ):</label>
+            <input type="number" id="productPrice" name="productPrice" placeholder="Nhập giá sản phẩm" min="0" required />
+
+            <label for="productQuantity">Số lượng:</label>
+            <input type="number" id="productQuantity" name="productQuantity" placeholder="Nhập số lượng" min="0" required />
+
+            <button id="addProductBtn">Thêm sản phẩm</button>
+
+        </section>
+    </main>
+<!-- Nên đặt cuối trang để đảm bảo DOM đã sẵn sàng -->
+<script type="module" src="./themsanpham.js"></script>
+
+    <script type="module" src="fire.js"></script>
+
+</body>
+
+</html>
