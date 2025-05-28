@@ -95,7 +95,7 @@ function generateQRCode(total) {
   }
 
   // URL QR code VietQR của bạn với tham số amount là tổng tiền
-  const qrUrl = `https://img.vietqr.io/image/MbBank-0060112236868-compact.jpg?amount=${total}`;
+  const qrUrl = `https://img.vietqr.io/image/MbBank-0945768636-compact.jpg?amount=${total}`;
 
   qrCodeContainer.innerHTML = `<img src="${qrUrl}" alt="Mã QR thanh toán" style="width:250px; height:250px; border-radius: 8px;">`;
 
